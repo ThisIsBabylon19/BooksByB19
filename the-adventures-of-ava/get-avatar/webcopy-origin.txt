@@ -1,0 +1,32 @@
+Uri: https://bitmoji.netlify.app/
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\index.htm
+Content Type: text/html
+
+Uri: https://bitmoji.netlify.app/background.jpg
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\background.jpg
+Content Type: image/jpeg
+
+Uri: https://bitmoji.netlify.app/favicon.ico
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://bitmoji.netlify.app/logo192.png
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\logo192.png
+Content Type: image/png
+
+Uri: https://bitmoji.netlify.app/manifest.json
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\manifest.json
+Content Type: application/json
+
+Uri: https://bitmoji.netlify.app/static/css/main.6dea0f05.chunk.css
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\static\css\main.6dea0f05.chunk.css
+Content Type: text/css
+
+Uri: https://bitmoji.netlify.app/static/js/2.26ccf0ea.chunk.js
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\static\js\2.26ccf0ea.chunk.js
+Content Type: application/javascript
+
+Uri: https://bitmoji.netlify.app/static/js/main.19e91b7b.chunk.js
+File Name: C:\Downloaded Web Sites\bitmoji.netlify.app\static\js\main.19e91b7b.chunk.js
+Content Type: application/javascript
+
