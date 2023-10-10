@@ -388,7 +388,7 @@ html,
     .selection-content-book-details-content:after { right: 2.75em; }
     
     .collection-content { padding-left: 25%; }
-    .collection-content-list { height: 25em; }
+    .collection-content-list { min-height: 25em; }
 
     .header-logo-img { height: 3em; }
     .header-logo-img.is-full { display: none; }
@@ -479,6 +479,13 @@ main {
     min-width: 30em;
     max-width: 70em;
     margin: 0 auto;
+}
+fieldset {
+//    bordeR: 1px solid red;
+}
+fieldset input {
+    width: 100%;
+    display: block;
 }
 
 .selection-content-list-item:nth-child(1) .selection-content-book-description-type-button {// display: none; }
