@@ -294,7 +294,6 @@ html,
     }
     .selection-content-book-details-content-row {
         display: inline-block;
-        padding: .25em 0;
     }
     .selection-content-book-details-content-row * { display: inline; }
 
@@ -403,6 +402,8 @@ html,
         padding: .5em 1em;
         margin: 1em 0;
     }
+
+    .selection-content-book-details-content-row { padding: .125em 0; }
 }
 @media all and (min-width: 50em) {
     body, html, main { font-size: 18px; }
@@ -451,6 +452,8 @@ html,
         padding: 1em 1.9em;
         margin: 1.9em 0;
     }
+    
+    .selection-content-book-details-content-row { padding: .25em 0; }
 }
 /*** END MEDIA-QUERIES ***/
 
@@ -473,6 +476,7 @@ html,
 
 /*** TO-DELETE ***/
 main {
+    min-width: 30em;
     max-width: 70em;
     margin: 0 auto;
 }
