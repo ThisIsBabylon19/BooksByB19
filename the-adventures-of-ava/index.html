@@ -204,10 +204,10 @@
 
 			<div class="collection-content"><ul class="collection-content-list">
 				<li class="collection-content-list-item"><div class="collection-content-form">
-					<form id="b19-form-1" action="https://formspree.io/f/mqkvwznb" method="post" class="collection-content-form-dock collection-content-form_waitlist u-form" name="AvaWaitlist" accept-charset="utf-8">
+					<form id="b19-form-1" action="https://formsubmit.co/madamellamalala@gmail.com" method="post" class="collection-content-form-dock collection-content-form_waitlist u-form" name="AvaWaitlist" accept-charset="utf-8">
 						<header class="collection-content-form-header">
 							<h4 class="collection-content-form-header-title">Join the Waitlist</h4>
-							<p class="collection-content-form-header-text">Get the alert when the ecommerce is ready!</p>
+							<p class="collection-content-form-header-text">Don't miss out! Join the wailist and be the first person to know when the ecommerce is live!</p>
 						</header>
 
 						<fieldset class="collection-content-form-fieldset u-form-fieldset">
@@ -220,14 +220,17 @@
 							<span class="u-form-fieldset-label">Whatsapp Number:</span>
 							<input type="phone" class="u-form-fieldset-input" placeholder="Whatsapp Number" name="WhatsappNumber" />
 							<span class="u-form-fieldset-label">Delivery Address:</span>
-							<textarea type="phone" class="u-form-fieldset-input" placeholder="Complete Address (including Zip Code & Country)" name="DeliveryAddress"></textarea>
-
+							<textarea class="u-form-fieldset-input" placeholder="Complete Address (including Zip Code & Country)" name="DeliveryAddress"></textarea>
+							
 							<input type="submit" class="u-form-fieldset-input" value="Alert Me" />
+							
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="text" name="_honey" style="display: none !important;" />
 						</fieldset>
 					</form>
 				</div></li>
 				<li class="collection-content-list-item"><div class="collection-content-form">
-					<form id="b19-form-2" action="https://formspree.io/f/mleyarzl" method="post" class="collection-content-form-dock collection-content-form_waitlist u-form" name="AvaAvatar" accept-charset="utf-8" enctype="multipart/form-data">
+					<form id="b19-form-2" action="https://formsubmit.co/madamellamalala@gmail.com" method="post" class="collection-content-form-dock collection-content-form_waitlist u-form" name="AvaAvatar" accept-charset="utf-8" enctype="multipart/form-data">
 						<header class="collection-content-form-header">
 							<h4 class="collection-content-form-header-title">Order Processing</h4>
 							<p class="collection-content-form-header-text">Ready to receive your book?</p>
@@ -251,9 +254,12 @@
 							<span class="u-form-fieldset-label">Whatsapp Number:</span>
 							<input type="phone" class="u-form-fieldset-input" placeholder="Whatsapp Number" name="WhatsappNumber" />
 							<span class="u-form-fieldset-label">Delivery Address:</span>
-							<textarea type="phone" class="u-form-fieldset-input" placeholder="Complete Address (including Zip Code & Country)" name="DeliveryAddress"></textarea>
-
+							<textarea class="u-form-fieldset-input" placeholder="Complete Address (including Zip Code & Country)" name="DeliveryAddress"></textarea>
+							
 							<input type="submit" class="u-form-fieldset-input" value="Place the Order" />
+							
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="text" name="_honey" style="display: none !important;" />
 						</fieldset>
 					</form>
 				</div></li>
@@ -267,7 +273,9 @@
 			</footer>
 		</main>
 		
+		<script src="/assets/scripts/jQuery.js"></script>
 		<script>
+			
 			var form1 = document.getElementByID("B19-form-1");
 
 			async function handleSubmit1(event) {
@@ -298,36 +306,38 @@
 				});
 			}
 			form1.addEventListener("submit", handleSubmit1);
-			var form2 = document.getElementByID("B19-form-2");
 
-			async function handleSubmit2(event) {
-				event.preventDefault();
-				var status = document.getElementByClassName("B19-form-status");
-				var data = new FormData(event.target);
-				fetch(event.target.action, {
-					method: form2.method,
-					body: data,
-					headers: {
-						"Accept": "application/json"
-					}
-				}).then(response => {
-					if(response.ok) {
-						status.innerHTML = "Thanks for your message!";
-						form2.reset();
-					} else {
-						response.json().then(data => {
-							if(Object.hasOwn(data, "errors")) {
-								status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-							} else {
-								status.innerHTML = "Oops! There is a technical problem #001."
-							}
-						})
-					}
-				}).catch(error => {
-					status.innerHTML = "Opps! There is a technical problem #002."
-				});
-			}
-			form2.addEventListener("submit", handleSubmit2);
+
+			//			var form2 = document.getElementById("B19-form-2");
+/*
+			$.ajax({
+				url: "https://formsubmit.co/ajax/madamellamalala@gmail.com",
+				method: "POST",
+				data: {
+					Ava_fullName: $("#f1NameSurname"),
+					Avatar_parentName: $("f2ParentName"),
+					Avatar_childName: $("f2ChildName"),
+					Avatar_childPhoto: $("f2ChildPhoto"),
+					Avatar_childAvatar: $("f2ChildAvatar"),
+					Avatar_paymentProod: $("f2PaymentProof"),
+					email: $("fEmail"),
+					whatsapp: $("fWhatsapp"),
+					address: $("fAddress")
+				}
+			});
+			
+			
+			var form1 = $("#B19-form-1");
+			form1.bind("submit", handleSubmit1);
+				async function handleSubmit1(e) {
+					e.preventDefault();
+				}
+			var form2 = $("#B19-form-2");
+			form2.bind("submit", handleSubmit2);
+				async function handleSubmit2(e) {
+					e.preventDefault();
+				}
+				*/
 		</script>
 	</body>
 </html>
