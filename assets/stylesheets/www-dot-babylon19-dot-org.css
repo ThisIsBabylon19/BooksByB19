@@ -474,19 +474,27 @@ html,
 /*** ANIMATION ***/
 /*** END ANIMATION ***/
 
-/*** TO-DELETE ***/
+/*** CSS-HACKS ***/
 main {
     min-width: 30em;
-    max-width: 70em;
-    margin: 0 auto;
 }
 fieldset {
 //    bordeR: 1px solid red;
 }
-fieldset input {
+fieldset input,
+fieldset textarea {
     width: 100%;
     display: block;
 }
+textarea {
+    min-height: 5em;
+}
+/*** END CSS-HACKS ***/
 
+/*** TO-DELETE ***/
+main {
+    max-width: 70em;
+    margin: 0 auto;
+}
 .selection-content-list-item:nth-child(1) .selection-content-book-description-type-button {// display: none; }
 /*** END TO-DELETE ***/
